@@ -3076,6 +3076,10 @@ vendor/lib64/vendor.qti.hardware.iop@1.0.so
 vendor/lib64/vendor.qti.hardware.iop@2.0.so
 vendor/lib/hw/vendor.qti.hardware.iop@2.0-impl.so
 
+# Perf-QPerformance/UxPerformance
+-framework/QPerformance.jar
+-framework/UxPerformance.jar
+
 # Peripheral
 vendor/bin/pm-proxy
 vendor/bin/pm-service
