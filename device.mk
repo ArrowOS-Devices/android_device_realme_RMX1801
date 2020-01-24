@@ -168,8 +168,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.charger.enable_suspend=true
 
+PRODUCT_PACKAGES += \
+    charger_res_images \
+    product_charger_res_images
+
 # Configstore
-RODUCT_PACKAGES += \
+PRODUCT_PACKAGES += \
     android.hardware.configstore@1.1-service \
     android.hardware.broadcastradio@1.0-impl
 
