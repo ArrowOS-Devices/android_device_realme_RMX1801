@@ -582,4 +582,8 @@
 	<string name="config_sysGPULoad">/sys/kernel/gpu/gpu_busy</string>
 	<integer name="config_sysCPUTempMultiplier">1000</integer>
 	<integer name="config_sysBatteryTempMultiplier">10</integer>
+
+    <!-- Whether to artificially interpret all signal strengths as one bar higher than they actually are -->
+    <bool name="config_inflateSignalStrength">true</bool>
+
 </resources>
