@@ -211,9 +211,6 @@ service seempd /system/bin/seempd
     socket seempdw dgram 0666 system system
 
 service vendor.hvdcp_opti /vendor/bin/hvdcp_opti
-     class main
-     user root
-     group system wakelock
-
-on property:sys.boot_completed=1
-    setprop sys.io.scheduler "bfq"
+    class main
+    user root
+    group system wakelock
