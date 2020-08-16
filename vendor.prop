@@ -105,3 +105,7 @@ debug.sf.early_gl_app_phase_offset_ns=1500000
 
 # Time-Service
 persist.vendor.delta_time.enable=true
+
+# Zygote preforking
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.device_config.runtime_native.usap_pool_enabled=true
