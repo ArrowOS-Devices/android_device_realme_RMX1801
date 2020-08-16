@@ -36,12 +36,12 @@ vendor/lib/rfsa/adsp/libVDHexagonBlurless_v2_skel.so
 vendor/lib/rfsa/adsp/libVDHexagonSuperPhoto_skel.so
 vendor/lib/rfsa/adsp/libvpp_svc_skel.so
 
-# ANT
--lib/libantradio.so
--lib64/libantradio.so
-product/lib64/com.qualcomm.qti.ant@1.0.so
-vendor/lib64/com.qualcomm.qti.ant@1.0.so
-vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so
+# ANT+ - from jasmine-user-10-QKQ1.190910.002-V11.0.11.0.QDIMIXM-release-keys
+-lib/libantradio.so|37c36369eeab19d5e6266d9d25ae0de9bb59502d
+product/lib64/com.qualcomm.qti.ant@1.0.so|f40868ad57012f1a512b14c889bc8380652cc50f
+-lib64/libantradio.so|43f6105678c082216f1606d8dd43fa1b0b753d7e
+vendor/lib64/com.qualcomm.qti.ant@1.0.so|181a8ab9b1d40705d3151821b53732c5566a2848
+vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so|aa08f9ec51392ed841f60ad08b7f083312c8c5ee
 
 # Audio
 etc/permissions/audiosphere.xml
