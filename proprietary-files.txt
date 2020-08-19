@@ -2796,68 +2796,76 @@ vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
 vendor/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 
-# Graphics
-vendor/lib/egl/eglSubDriverAndroid.so
-vendor/lib/egl/libEGL_adreno.so
-vendor/lib/egl/libGLESv1_CM_adreno.so
-vendor/lib/egl/libGLESv2_adreno.so
-vendor/lib/egl/libq3dtools_adreno.so
-vendor/lib/egl/libq3dtools_esx.so
-vendor/lib/egl/libQTapGLES.so
-vendor/lib/hw/vulkan.sdm660.so
-vendor/lib/libadreno_utils.so
-vendor/lib/libbccQTI.so
-vendor/lib/libC2D2.so
-vendor/lib/libc2d30_bltlib.so
-vendor/lib/libCB.so
-vendor/lib/libEGL_adreno.so
-vendor/lib/libgsl.so
-vendor/lib/libllvm-glnext.so
-vendor/lib/libllvm-qcom.so
-vendor/lib/libOpenCL.so
-vendor/lib/libpvr.so
-vendor/lib/libq3dtools_adreno.so
-vendor/lib/libRSDriver_adreno.so
-vendor/lib/librs_adreno.so
-vendor/lib/librs_adreno_sha1.so
-vendor/lib64/egl/eglSubDriverAndroid.so
-vendor/lib64/egl/libEGL_adreno.so
-vendor/lib64/egl/libGLESv1_CM_adreno.so
-vendor/lib64/egl/libGLESv2_adreno.so
-vendor/lib64/egl/libq3dtools_adreno.so
-vendor/lib64/egl/libq3dtools_esx.so
-vendor/lib64/egl/libQTapGLES.so
-vendor/lib64/hw/vulkan.sdm660.so
-vendor/lib64/libadreno_utils.so
-vendor/lib64/libbccQTI.so
-vendor/lib64/libC2D2.so
-vendor/lib64/libc2d30_bltlib.so
-vendor/lib64/libCB.so
-vendor/lib64/libEGL_adreno.so
-vendor/lib64/libgsl.so
-vendor/lib64/libllvm-glnext.so
-vendor/lib64/libllvm-qcom.so
-vendor/lib64/libOpenCL.so
-vendor/lib64/libpvr.so
-vendor/lib64/libq3dtools_adreno.so
-vendor/lib64/libqseed3.so
-vendor/lib64/libRSDriver_adreno.so
-vendor/lib64/librs_adreno.so
-vendor/lib64/librs_adreno_sha1.so
+# Graphics - from jasmine
+vendor/lib/egl/eglSubDriverAndroid.so|091021709596e0757ab69188ea42fb046faab09a
+vendor/lib/egl/libEGL_adreno.so|525f5bdd126fd10d5053824b4d6c793c11d96c09
+vendor/lib/egl/libGLESv1_CM_adreno.so|c80fbec1dfc02a226bc8345a61e7368719ce27e7
+vendor/lib/egl/libGLESv2_adreno.so|9d087cd30e71ed5057dca7a09cc5db5e172b824b
+vendor/lib/egl/libq3dtools_adreno.so|d43f50b38edd98a548ea9ca216077f22dac0ad97
+vendor/lib/egl/libq3dtools_esx.so|a57690f5b0747d7845a022296e85d31b4c87b837
+vendor/lib/egl/libQTapGLES.so|788a1833fd3e343a218c03b56b9569441ceb878a
+vendor/lib/libadreno_utils.so|668bd94d17c7d8d7d5eb10c80b5b7af3060ced18
+vendor/lib/libbccQTI.so|211ebb7159a41917bfc98fdf816b7c8d0f1fa2e6
+vendor/lib/libC2D2.so|41c3dc4690aba025ec37ef95c09ce43252c07fea
+vendor/lib/libc2d30_bltlib.so|9b54b59c72277d94ee81223efeb5fc1e190fcc0f
+vendor/lib/libCB.so|2b3b51a70527f7bddc463c8e1808b4200fb13698
+vendor/lib/libgsl.so|32db65dcbc00e172a5d91e10ab270b3ecfecfcab
+vendor/lib/libllvm-glnext.so|1eed0390c1fc63763914e31c0a97f06b8bff271f
+vendor/lib/libllvm-qcom.so|a5442e65e81bf66ae7d551d7801908f8fa3ff4c0
+vendor/lib/libOpenCL.so|df83abbc452249d07b52bf67c1c9b537c76019af
+vendor/lib/librs_adreno.so|9d60513decf0af27a531e76459f12b5ec57b096c
+vendor/lib/librs_adreno_sha1.so|0d284a2bb885fd5b4499952778208a4e289b3869
+vendor/lib/libRSDriver_adreno.so|f0cd0cd3b662ef26965eaa952dcc858555c2fbeb
+vendor/lib64/egl/eglSubDriverAndroid.so|268c051fcf15d3fa65e3384e1caf910ab94c6201
+vendor/lib64/egl/libEGL_adreno.so|2962c4804a73f49b70dd32916b7bcb2c33a8694f
+vendor/lib64/egl/libGLESv1_CM_adreno.so|14c9fa428416a3396688eb3ac780ef70884e4cd2
+vendor/lib64/egl/libGLESv2_adreno.so|a48e6a9c0fd5b2330b79c10f69dafc1bca9f3551
+vendor/lib64/egl/libq3dtools_adreno.so|c5058bf63d8b28af34e07648f5cfcb9f6742fd0c
+vendor/lib64/egl/libq3dtools_esx.so|982fad14cd7889560a9caab227ac10d8415b1e14
+vendor/lib64/egl/libQTapGLES.so|c6eb23a9bb8fb6c502101f1bd5eeddc2b80bdec6
+vendor/lib64/libadreno_utils.so|70dfef6b4b489cb6d95a75afc7ff9d6a8f5ee057
+vendor/lib64/libbccQTI.so|35c8a31625d47110b984ccdafd7e2f64eebffa23
+vendor/lib64/libC2D2.so|4de717e68696444f6c83a313d41c9fc34deb05ea
+vendor/lib64/libc2d30_bltlib.so|737594a47bae5aad0ffc999896ba15693f7e4c4b
+vendor/lib64/libCB.so|145d77227d6a6e582b91b68c735e34af6a4ee3f3
+vendor/lib64/libgsl.so|2a408f2d63eafd7312a2a4fa3e949cd176370e9e
+vendor/lib64/libllvm-glnext.so|5a6c0b6983133b7e4750e8984b9f71a25b837a20
+vendor/lib64/libllvm-qcom.so|954937d9491e48caf5a6a1ac322f8feafcbbc4ca
+vendor/lib64/libOpenCL.so|21897637e702c4a97eb748934e9f1fc8880881c5
+vendor/lib64/librs_adreno.so|a887f0542d5fcd45a437db9bf04ac77ee480bd0e
+vendor/lib64/librs_adreno_sha1.so|cc1701cb536532fc6269142db82f7c2deec30cf5
+vendor/lib64/libRSDriver_adreno.so|d1a6c079de14a665fa73cc217c46977ef84c08aa
 
-# Graphics (HDR)
-vendor/lib/libhdr_tm.so
-vendor/lib64/libhdr_tm.so
+# Graphics (HDR) - from jasmine
+vendor/lib/libhdr_tm.so|8d253c28c1fd976ac009088e36d483c16566f9a5
+vendor/lib64/libhdr_tm.so|1e74de5b505c8f742f1fb0379725ec9f5fd53282
 
-# Graphics (SDM)
-vendor/lib/libqseed3.so
--vendor/lib/libsdm-disp-vndapis.so
-vendor/lib64/libqseed3.so
-vendor/lib64/libsdm-color.so
-vendor/lib64/libsdm-diag.so
--vendor/lib64/libsdm-disp-vndapis.so
-vendor/lib64/libsdmextension.so
-vendor/lib64/libtinyxml2_1.so
+# Graphics (SDM) - from jasmine
+vendor/lib/libqseed3.so|f1add9c736e680d205471d23d1f5452f623174f5
+vendor/lib/libsdm-color.so|2856bf71af603076b23d4c206dacba7c82350387
+vendor/lib/libsdm-diag.so|b1813c5639553537ccda31b2e44b5d4a85eb2adc
+vendor/lib/libsdmextension.so|37d5fca198c8e8526d6a4cb95f9c4bdf719e0efd
+vendor/lib/libtinyxml2_1.so|f54f81359c78715315bc24678c34c129413e6c92
+vendor/lib64/libqseed3.so|fb7973800a5555838dc9bc36e81e16310cb33e39
+vendor/lib64/libsdm-color.so|fb624abddaf7c5971f470c36dcdd7c7feb060352
+vendor/lib64/libsdm-diag.so|6eb99b83036f917070393fa067eaebc50a5ff307
+vendor/lib64/libsdm-disp-vndapis.so|ba4978c373f9892d884d07c4cf25dba9d73fda1f
+vendor/lib64/libsdmextension.so|71d2737fea43aa19216f63d551d2abf7ae02794e
+vendor/lib64/libtinyxml2_1.so|ba981e332895a053a67fc54a8190365a3ad37f2d
+
+# Graphics (Vulkan) - from jasmine
+vendor/lib/hw/vulkan.sdm660.so|7310dc473b52923cc02ba942cbe209002b583b8b
+vendor/lib64/hw/vulkan.sdm660.so|7c00b59626361d0a81d0f222f93c08198bd5cc64
+
+# Graphics (Permissions) - from jasmine
+vendor/etc/permissions/android.hardware.opengles.aep.xml|aa43dad85f2c2d65f0ac2afb1f5425e1220b832b
+vendor/etc/permissions/android.hardware.vulkan.compute-0.xml|8a498209db76907ec91241458ce350cd60c142ee
+vendor/etc/permissions/android.hardware.vulkan.compute.xml|8a498209db76907ec91241458ce350cd60c142ee
+vendor/etc/permissions/android.hardware.vulkan.level-0.xml|b893f37c0ac53835d45b60019f75a1550bdd9cb9
+vendor/etc/permissions/android.hardware.vulkan.level.xml|b893f37c0ac53835d45b60019f75a1550bdd9cb9
+vendor/etc/permissions/android.hardware.vulkan.version-1_1.xml|fc70b06dc33428cb263b2af903bb26385180884c
+vendor/etc/permissions/android.hardware.vulkan.version.xml|fc70b06dc33428cb263b2af903bb26385180884c
+vendor/etc/permissions/android.software.vulkan.deqp.level.xml|8355b3b6d2f57534de845cc4ac011f417994f524
 
 # Graphics Firmware
 vendor/firmware/a512_zap.b00
