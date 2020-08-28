@@ -65,3 +65,6 @@
 # Wlan
 /sys/devices(/platform)?/soc/[0-9]+.qcom,icnss/net/wlan[0-1](/.*)?                                      u:object_r:sysfs_wlan:s0
 /sys/devices(/platform)?/soc/[0-9]+.qcom,icnss/net/p2p0(/.*)?                                           u:object_r:sysfs_wlan:s0
+
+# FPS Info
+/sys/devices/virtual/graphics/fb0/measured_fps                              u:object_r:sysfs_fps:s0
