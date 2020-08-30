@@ -203,6 +203,9 @@ PRODUCT_PACKAGES += \
     vendor.display.config@1.5 \
     vendor.display.config@1.3.vendor
 
+# Dirac
+$(call inherit-product, packages/apps/RealmeDirac/dirac.mk)
+
 # Doze
 PRODUCT_PACKAGES += \
     RealmeParts
