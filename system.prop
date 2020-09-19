@@ -44,6 +44,7 @@ vendor.vidc.enc.disable_bframes=1
 vendor.vidc.enc.disable.pq=false
 vendor.vidc.dec.enable.downscalar=0
 vidc.enc.target_support_bframe=1
+debug.hwui.renderer=skiavk
 
 # IMS
 persist.radio.VT_CAM_INTERFACE=1
