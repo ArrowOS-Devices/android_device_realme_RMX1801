@@ -68,3 +68,6 @@
 
 # FPS Info
 /sys/devices/virtual/graphics/fb0/measured_fps                              u:object_r:sysfs_fps:s0
+
+# Power
+/(vendor|system/vendor)/bin/hw/android\.hardware\.power@1\.3-service\.xiaomi_sdm660-libperfmgr  u:object_r:hal_power_default_exec:s0
