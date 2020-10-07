@@ -316,7 +316,7 @@ PRODUCT_PACKAGES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power@1.2-service-qti
+    android.hardware.power@1.3-service.xiaomi_sdm660-libperfmgr
 
 #protobuf
 PRODUCT_COPY_FILES += \
