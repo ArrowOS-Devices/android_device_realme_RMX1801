@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/potato_RMX1801.mk
+    $(LOCAL_DIR)/stag_RMX1801.mk
 
 COMMON_LUNCH_CHOICES := \
-    potato_RMX1801-user \
-    potato_RMX1801-userdebug \
-    potato_RMX1801-eng
+    stag_RMX1801-user \
+    stag_RMX1801-userdebug \
+    stag_RMX1801-eng
