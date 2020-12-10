@@ -200,12 +200,12 @@ PRODUCT_PACKAGES += \
     libgui_vendor \
     libhwc2on1adapter \
     libhwc2onfbadapter \
-    libqdMetaData.system \
+    libqdMetaData.vendor \
     libtinyxml \
     libvulkan \
     memtrack.sdm660 \
-    vendor.display.config@1.9 \
-    vendor.display.config@1.9.vendor
+    vendor.display.config@2.0 \
+    vendor.display.config@2.0.vendor
 
 # Dirac
 $(call inherit-product-if-exists, packages/apps/RealmeDirac/dirac.mk)
