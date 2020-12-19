@@ -3271,7 +3271,7 @@ vendor/lib/libsensor_test.so
 vendor/lib/libsensor_thresh.so
 vendor/lib/libsensor_user_cal.so
 vendor/lib/libssc_default_listener.so
-vendor/lib/sensors.ssc.so
+vendor/lib/sensors.ssc.so|bee13b2ad7f1ef0d2cf63708fa38ad76877ea287
 vendor/lib/sensor_calibrate.so
 vendor/lib64/hw/activity_recognition.sdm660.so
 vendor/lib64/hw/sensors.sdm660_64.so
@@ -3281,7 +3281,7 @@ vendor/lib64/libsensor_test.so
 vendor/lib64/libsensor_thresh.so
 vendor/lib64/libsensor_user_cal.so
 vendor/lib64/libssc_default_listener.so
-vendor/lib64/sensors.ssc.so
+vendor/lib64/sensors.ssc.so|42577aa881baa287ec037c0e59972ad0e0358b08
 vendor/lib64/sensor_calibrate.so
 
 # Sensor-configs
