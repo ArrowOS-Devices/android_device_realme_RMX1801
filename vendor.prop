@@ -64,9 +64,10 @@ ro.frp.pst=/dev/block/bootdevice/by-name/frp
 ro.com.google.clientidbase.ms=android-oppo-rev1
 
 # Graphics
-debug.sf.disable_backpressure=1
+debug.sf.disable_backpressure=0
 ro.opengles.version=196610
 debug.sdm.support_writeback=0
+debug.cpurend.vsync=true
 
 # Media
 debug.stagefright.omx_default_rank.sw-audio=1
