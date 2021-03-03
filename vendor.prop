@@ -127,6 +127,10 @@ debug.sf.earlyGl.sf.duration=13500000
 debug.sf.earlyGl.app.duration=21000000
 debug.sf.enable_hwc_vds=1
 
+# SoC
+ro.soc.manufacturer=Qualcomm
+ro.soc.model=SDM660
+
 # Time-Service
 persist.vendor.delta_time.enable=true
 
