@@ -272,7 +272,6 @@ PRODUCT_PACKAGES += \
     init.qcom.usb.sh \
     init.qti.qseecomd.sh \
     init.recovery.qcom.rc \
-    init.safailnet.rc \
     init.target.rc \
     ueventd.qcom.rc
 
