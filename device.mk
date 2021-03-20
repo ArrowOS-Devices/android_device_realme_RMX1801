@@ -23,6 +23,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 
+# inherit properties
+$(call inherit-product, $(LOCAL_PATH)/properties.mk)
+PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
