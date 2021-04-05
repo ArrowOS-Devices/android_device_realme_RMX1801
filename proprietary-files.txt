@@ -3043,12 +3043,18 @@ vendor/lib/vendor.oppo.hardware.mmdisplayfeature@1.0.so
 vendor/lib64/hw/vendor.oppo.hardware.mmdisplayfeature@1.0-impl.so
 vendor/lib64/vendor.oppo.hardware.mmdisplayfeature@1.0.so
 
-# IRQ balance - from jasmine-user 10 QKQ1.190910.002 V11.0.4.0.QDIMIXM release-keys
-vendor/bin/msm_irqbalance|e917104fbd26c844d27ffb2b7ec4f665fdfb8b78
+# IRQ balance - from LA.UM.8.2.r1-07500-sdm660.0
+vendor/bin/msm_irqbalance|0e967f5c7eaf8d863a50996459101be47adf96a2
 
-# Perf - from Taimen QQ3A.200705.002
-vendor/lib/libqti-perfd-client.so|c1c7482b58fbe012f934b54bea78ff52068ea530
-vendor/lib64/libqti-perfd-client.so|d16c17427d6383368d035c9bf028630837b3b969
+# Perf - from Taimen RP1A.201005.004
+vendor/lib/libqti-perfd-client.so|08b0cd20dbc79645ee73ea4fdc5221d41d09588a
+vendor/lib64/libqti-perfd-client.so|cd3def30b6d444430ea8cea8956623d9d165eb7a
+
+# Perf - from LA.UM.8.6.2.r1-08600-89xx.0
+vendor/lib64/libadaptlaunch.so|cf784401fc827e5195d595a6d855ec89ea8c22bf
+vendor/lib64/libappclassifier.so|d5956c2dc9344ddcca0e78d84c393320c2e0cc97
+vendor/lib64/libgameoptfeature.so|b135489d253f0a8d7884238fe7887eb85b87745d
+vendor/lib64/liblearningmodule.so|a9390d0ef1ec82c97a61035ec686c1d094fdca98
 
 # Peripheral
 vendor/bin/pm-proxy
