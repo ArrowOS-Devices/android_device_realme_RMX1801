@@ -15,8 +15,3 @@ PRODUCT_PROPERTY_OVERRIDES += \
 #radio
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.radio.add_power_save=1
-
-# Graphics
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.hardware.egl=adreno \
-    ro.hardware.vulkan=adreno
