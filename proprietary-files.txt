@@ -2903,7 +2903,6 @@ vendor/etc/init/imsqmidaemon.rc
 vendor/etc/init/imsrcsd.rc
 vendor/etc/init/ims_rtp_daemon.rc
 vendor/etc/init/init.qdmastats.rc
-vendor/etc/init/init.time_daemon.rc
 vendor/etc/init/port-bridge.rc
 vendor/etc/init/qcrild.rc
 
@@ -3327,10 +3326,12 @@ vendor/lib/libthermalclient.so
 vendor/lib64/libthermalclient.so
 vendor/lib64/libthermalioctl.so
 
-# Time
--vendor/app/TimeService/TimeService.apk
-vendor/bin/time_daemon
-vendor/lib64/libtime_genoff.so
+# Time services - from LA.UM.9.2.r1-01800-SDMxx0.0
+-vendor/app/TimeService/TimeService.apk|d8ea5450a8eec829ffe2fd2c43a922793ac22d01
+-vendor/lib/libtime_genoff.so|bd13c34aef67e1d513dd23c731435d50202d0741
+-vendor/lib64/libtime_genoff.so|f5a0dec271a7b79da80230d8988a6b602f333322
+vendor/bin/time_daemon|a27ac4aeafb41158b96046edbd553ae76835b4ed
+vendor/etc/init/init.time_daemon.rc|b253ca2a498757e14e1d7a051bf504ae09218f51
 
 # UBWC
 vendor/lib64/libstreamparser.so
