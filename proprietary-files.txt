@@ -3048,10 +3048,6 @@ vendor/lib64/vendor.oppo.hardware.mmdisplayfeature@1.0.so
 # IRQ balance - from LA.UM.8.2.r1-07500-sdm660.0
 vendor/bin/msm_irqbalance|0e967f5c7eaf8d863a50996459101be47adf96a2
 
-# Perf - from Taimen RP1A.201005.004
-vendor/lib/libqti-perfd-client.so|08b0cd20dbc79645ee73ea4fdc5221d41d09588a
-vendor/lib64/libqti-perfd-client.so|cd3def30b6d444430ea8cea8956623d9d165eb7a
-
 # Perf - from LA.UM.8.6.2.r1-08600-89xx.0
 vendor/lib64/libadaptlaunch.so|cf784401fc827e5195d595a6d855ec89ea8c22bf
 vendor/lib64/libappclassifier.so|d5956c2dc9344ddcca0e78d84c393320c2e0cc97
