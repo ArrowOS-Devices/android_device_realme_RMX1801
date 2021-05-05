@@ -430,9 +430,9 @@ PRODUCT_PACKAGES += \
     android.hardware.vibrator@1.0-impl \
     android.hardware.vibrator@1.0-service
 
-# VNDK-SP
+# VNDK-EXT
 PRODUCT_PACKAGES += \
-    vndk-sp \
+    vndk-ext \
     com.android.vndk.current.on_vendor
 
 # WiFi
