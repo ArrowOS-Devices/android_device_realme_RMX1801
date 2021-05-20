@@ -23,3 +23,4 @@ vndbinder_use(hal_fingerprint_oppo)
 
 add_service(hal_fingerprint_oppo, fingerprintvnd_service)
 allow hal_fingerprint_oppo vndbinder_device:chr_file ioctl;
+allow hal_fingerprint_oppo sysfs_msm_subsys:dir { search };
