@@ -22,3 +22,6 @@ allow hal_power_default sysfs_devfreq:lnk_file { read };
 # Set scheduling info for apps (for adpf)
 allow hal_power_default appdomain:process { getsched setsched };
 allow hal_power_default self:capability sys_nice;
+
+# Set scheduling info for system_server (for adpf)
+allow hal_power_default system_server:process setsched;
