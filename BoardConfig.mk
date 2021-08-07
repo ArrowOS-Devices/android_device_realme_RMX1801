@@ -179,9 +179,6 @@ PROTOBUF_SUPPORTED := true
 # Security patch level
 VENDOR_SECURITY_PATCH := 2020-06-05
 
-# SurfaceFlinger
-TARGET_USE_AOSP_SURFACEFLINGER := true
-
 # Treble
 BOARD_VNDK_VERSION := current
 PRODUCT_FULL_TREBLE_OVERRIDE := true
