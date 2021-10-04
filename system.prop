@@ -25,6 +25,9 @@ ro.camera.hfr.enable=1
 ro.camera.sensor.aux2m=1
 ro.camera.temperature.limit=450
 
+# Disable vsync for cpu rendered apps
+debug.cpurend.vsync=false
+
 # Data modules
 persist.data.df.dev_name=rmnet_usb0
 persist.vendor.data.mode=concurrent
