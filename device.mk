@@ -33,7 +33,10 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
     $(LOCAL_PATH)/overlay-aosp
 
 # Soong namespaces
-PRODUCT_SOONG_NAMESPACES += device/realme/RMX1801
+PRODUCT_SOONG_NAMESPACES += \
+    device/realme/RMX1801 \
+    hardware/google/interfaces \
+    hardware/google/pixel
 
 # Permissions
 PRODUCT_COPY_FILES += \
