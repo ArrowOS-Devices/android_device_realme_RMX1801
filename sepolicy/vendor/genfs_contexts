@@ -26,9 +26,8 @@ genfscon proc /touchpanel                                       u:object_r:proc_
 genfscon sysfs /devices/virtual/block/zram0/mm_stat             u:object_r:sysfs_zram:s0
 
 # Power
-genfscon debugfs /system_stats       u:object_r:debugfs_rpm:s0 
-genfscon sysfs /devices/soc/c900000.qcom,mdss_mdp        u:object_r:sysfs_msm_subsys:s0 genfscon sysfs 
-/devices/soc/5000000.qcom,kgsl-3d0       u:object_r:sysfs_msm_subsys:s0 genfscon sysfs 
-/devices/soc/soc:qcom,gpubw      u:object_r:sysfs_msm_subsys:s0 genfscon sysfs 
-/devices/soc/soc:qcom,gpubw/devfreq      u:object_r:sysfs_msm_subsys:s0
-genfscon sysfs /devices/soc/soc:qcom,cpubw       u:object_r:sysfs_msm_subsys:s0
+genfscon sysfs /devices/soc/soc:qcom,gpubw                    u:object_r:sysfs_devfreq:s0
+genfscon sysfs /devices/soc/soc:qcom,cpubw                    u:object_r:sysfs_devfreq:s0
+genfscon sysfs /devices/soc/soc:qcom,mincpubw                 u:object_r:sysfs_devfreq:s0
+genfscon sysfs /devices/soc/soc:qcom,memlat-cpu0              u:object_r:sysfs_devfreq:s0
+genfscon sysfs /devices/soc/soc:qcom,memlat-cpu4              u:object_r:sysfs_devfreq:s0
