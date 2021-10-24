@@ -45,6 +45,7 @@ vendor.vidc.enc.disable.pq=false
 vendor.vidc.dec.enable.downscalar=0
 vidc.enc.target_support_bframe=1
 debug.hwui.renderer=skiagl
+debug.hwui.use_buffer_age=false
 
 # Fingerprint
 fingerprint.nocleanup=true
