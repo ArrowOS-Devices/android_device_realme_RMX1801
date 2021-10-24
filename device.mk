@@ -488,7 +488,3 @@ PRODUCT_BOARD_PLATFORM := sdm660
 # Signapk
 PRODUCT_HOST_PACKAGES += \
     signapk
-
-# WFD
-PRODUCT_BOOT_JARS += \
-    WfdCommon
