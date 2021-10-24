@@ -46,6 +46,9 @@ vendor.vidc.dec.enable.downscalar=0
 vidc.enc.target_support_bframe=1
 debug.hwui.renderer=skiavk
 
+# Fingerprint
+fingerprint.nocleanup=true
+
 # IMS
 persist.radio.VT_CAM_INTERFACE=1
 persist.vendor.qti.telephony.vt_cam_interface=1
