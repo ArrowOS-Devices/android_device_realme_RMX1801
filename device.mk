@@ -485,10 +485,6 @@ PRODUCT_PACKAGES += \
     libaacwrapper \
     libnl
 
-# Qcom
-PRODUCT_USES_QCOM_HARDWARE := true
-PRODUCT_BOARD_PLATFORM := sdm660
-
 # Signapk
 PRODUCT_HOST_PACKAGES += \
     signapk
