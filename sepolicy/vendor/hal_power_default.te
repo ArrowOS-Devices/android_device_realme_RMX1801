@@ -16,3 +16,4 @@ allow hal_power_default sysfs_devfreq:dir { search };
 allow hal_power_default sysfs_devfreq:file { open  write };
 allow hal_power_default sysfs_kgsl:file { open  write };
 allow hal_power_default sysfs_kgsl:lnk_file { read };
+allow hal_power_default sysfs_devfreq:lnk_file { read };
