@@ -452,6 +452,9 @@ PRODUCT_PACKAGES += \
     android.hardware.vibrator@1.0-impl \
     android.hardware.vibrator@1.0-service
 
+# Vndk
+PRODUCT_EXTRA_VNDK_VERSIONS := 28 29 30
+
 # VNDK-EXT
 PRODUCT_PACKAGES += \
     vndk-ext \
