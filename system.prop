@@ -44,11 +44,11 @@ vendor.vidc.enc.disable_bframes=1
 vendor.vidc.enc.disable.pq=false
 vendor.vidc.dec.enable.downscalar=0
 vidc.enc.target_support_bframe=1
-debug.hwui.renderer=skiagl
 debug.hwui.use_buffer_age=false
 debug.sf.recomputecrop=0
 vendor.display.disable_rotator_downscale=1
 vendor.display.disable_scaler=0
+debug.hwui.renderer=skiavk
 
 # Fingerprint
 fingerprint.nocleanup=true
