@@ -603,6 +603,7 @@ service esepmdaemon /vendor/bin/esepmdaemon
 on charger
     setprop persist.sys.usb.config mass_storage
     start qcom-post-boot
+    start vendor.health-hal-2-0
 
 #add poweroffhandler
 service poweroffhandler /vendor/bin/poweroffhandler
