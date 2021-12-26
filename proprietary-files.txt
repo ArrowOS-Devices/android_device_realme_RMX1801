@@ -2895,8 +2895,10 @@ vendor/firmware/a530_pm4.fw
 vendor/firmware/a540_gpmu.fw2
 
 # Health (Oppo)
-vendor/bin/hw/android.hardware.health@2.0-service.oppo
 vendor/etc/init/android.hardware.health@2.0-service.oppo.rc
+
+# Health (Oppo) - from RMX1801EX_11.F.12 - Modified
+vendor/bin/hw/android.hardware.health@2.0-service.oppo|a55c92100c0a14714122d2916068bc32d79d5c3e
 
 # Hypnus
 vendor/bin/hw/vendor.oppo.hardware.hypnus@1.0-service
