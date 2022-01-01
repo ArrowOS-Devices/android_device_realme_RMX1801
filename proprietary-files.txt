@@ -106,12 +106,6 @@ vendor/lib64/libaudio_log_utils.so
 # Audio Power Amplifier
 vendor/firmware/tfa98xx.cnt
 
-# Audio KTV
-vendor/bin/hw/vendor.oppo.hardware.ktv@1.0-service
-vendor/etc/init/vendor.oppo.hardware.ktv@1.0-service.rc
-vendor/lib64/hw/vendor.oppo.hardware.ktv@1.0-impl.so
-vendor/lib64/vendor.oppo.hardware.ktv@1.0.so
-
 # Bluetooth - from DDV_sprout - m690-user 11 RKQ1.210607.001 00WW_3_440 release-keys
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|07d96d0d3c4a500b14ea3c97e02b9eb5ee2bbc4d
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc|f4ee3b2da2b08647447869ade86ec63f7340accc
