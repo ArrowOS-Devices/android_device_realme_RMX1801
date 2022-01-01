@@ -2760,8 +2760,10 @@ vendor/lib/vendor.oppo.hardware.commondcs@1.0.so
 vendor/lib/vendor.qti.hardware.fingerprint@1.0.so
 vendor/lib64/android.frameworks.fingerprintservice@1.0.so
 vendor/lib64/libalipay_factory.so
+vendor/lib64/libhypnusclient.so
 vendor/lib64/libqfp-service.so
 vendor/lib64/vendor.oppo.hardware.commondcs@1.0.so
+vendor/lib64/vendor.oppo.hardware.hypnus@1.0.so
 vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
 
 # Fingerprint Firmware
@@ -2919,12 +2921,6 @@ vendor/etc/init/android.hardware.health@2.0-service.oppo.rc
 
 # Health (Oppo) - from RMX1801EX_11.F.12 - Modified
 vendor/bin/hw/android.hardware.health@2.0-service.oppo|a55c92100c0a14714122d2916068bc32d79d5c3e
-
-# Hypnus
-vendor/bin/hw/vendor.oppo.hardware.hypnus@1.0-service
-vendor/etc/init/vendor.oppo.hardware.hypnus@1.0-service.rc
-vendor/lib64/libhypnusclient.so
-vendor/lib64/vendor.oppo.hardware.hypnus@1.0.so
 
 # Init
 vendor/etc/init/cnd.rc
