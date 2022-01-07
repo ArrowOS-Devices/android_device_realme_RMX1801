@@ -2506,7 +2506,6 @@ vendor/lib64/libmmcamera_tintless_algo.so
 vendor/lib64/libmmcamera_tintless_bg_pca_algo.so
 
 # Camera - oppoalgo_daemon
-vendor/bin/oppoalgo_daemon
 vendor/lib/liboppoalgolib.so
 vendor/lib/liboppocamalgo_daemon.so
 
@@ -2942,22 +2941,6 @@ vendor/etc/init/qcrild.rc
 # Init - modified
 vendor/etc/init/netmgrd.rc|213d147cfcfe175aa4cdf1a345f3b148ea72982d
 
-# Keybox
-vendor/bin/hw/vendor.oppo.hardware.cryptoeng@1.0-service
-vendor/etc/init/vendor.oppo.hardware.cryptoeng@1.0-service_FDE.rc
-vendor/etc/permissions/vendor-oppo-hardware.cryptoeng.xml
-vendor/lib64/libqsee_keybox_ca.so
-vendor/lib64/vendor.oppo.hardware.cryptoeng@1.0.so
-vendor/firmware/cryptoeng.b00
-vendor/firmware/cryptoeng.b01
-vendor/firmware/cryptoeng.b02
-vendor/firmware/cryptoeng.b03
-vendor/firmware/cryptoeng.b04
-vendor/firmware/cryptoeng.b05
-vendor/firmware/cryptoeng.b06
-vendor/firmware/cryptoeng.b07
-vendor/firmware/cryptoeng.mdt
-
 # Keymaster
 vendor/bin/hw/android.hardware.keymaster@3.0-service-qti
 vendor/bin/hw/android.hardware.keymaster@4.0-service-qti
@@ -3070,14 +3053,6 @@ vendor/lib64/libstagefright_soft_qtiflacdec.so
 vendor/lib64/libvpphvx.so
 vendor/lib64/libvpplibrary.so
 vendor/lib64/vendor.qti.hardware.vpp@1.1.so
-
-# Oppo MM Display
-vendor/bin/hw/vendor.oppo.hardware.mmdisplayfeature@1.0-service
-vendor/etc/init/vendor.oppo.hardware.mmdisplayfeature@1.0-service.rc
-vendor/lib/hw/vendor.oppo.hardware.mmdisplayfeature@1.0-impl.so
-vendor/lib/vendor.oppo.hardware.mmdisplayfeature@1.0.so
-vendor/lib64/hw/vendor.oppo.hardware.mmdisplayfeature@1.0-impl.so
-vendor/lib64/vendor.oppo.hardware.mmdisplayfeature@1.0.so
 
 # IRQ balance - from LA.UM.8.2.r1-07500-sdm660.0
 vendor/bin/msm_irqbalance|0e967f5c7eaf8d863a50996459101be47adf96a2
