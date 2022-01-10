@@ -45,7 +45,6 @@ persist.camera.HAL3.enabled=1
 
 # CNE/ DPM
 persist.vendor.cne.feature=1
-persist.vendor.dpm.feature=0
 
 # Codec2 switch
 debug.media.codec2=2
