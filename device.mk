@@ -88,7 +88,8 @@ PRODUCT_PACKAGES += \
 
 # ANT+
 PRODUCT_PACKAGES += \
-    AntHalService
+    AntHalService-Soong \
+    com.dsi.ant@1.0.vendor
 
 # Audio
 PRODUCT_PACKAGES += \
@@ -152,11 +153,15 @@ PRODUCT_PACKAGES += \
 # Bluetooth
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth.audio-impl \
-    vendor.qti.hardware.btconfigstore@1.0.vendor \
+    android.hardware.bluetooth.audio@2.0.vendor \
+    android.hardware.bluetooth@1.0 \
     android.hardware.bluetooth@1.0.vendor \
     audio.bluetooth.default \
     libbluetooth_audio_session \
-    libbthost_if
+    libbthost_if \
+    vendor.qti.hardware.bluetooth_audio@2.0.vendor \
+    vendor.qti.hardware.btconfigstore@1.0.vendor \
+    vendor.qti.hardware.btconfigstore@2.0.vendor
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/component-overrides.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/component-overrides.xml
