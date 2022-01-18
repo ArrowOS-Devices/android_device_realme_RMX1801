@@ -35,6 +35,7 @@ vendor.voice.path.for.pcm.voip=true
 
 # Bluetooth
 persist.vendor.bt.aac_frm_ctl.enabled=true
+persist.vendor.qcom.bluetooth.soc=cherokee
 vendor.qcom.bluetooth.soc=cherokee
 
 # Camera
