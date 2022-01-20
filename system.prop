@@ -15,6 +15,7 @@ ro.bluetooth.emb_wp_mode=false
 ro.bluetooth.wipower=false
 vendor.bluetooth.soc=cherokee
 bluetooth.device.class_of_device=90,2,12
+bluetooth.profile.asha.central=false
 
 # Camera
 persist.camera.aifb=1
