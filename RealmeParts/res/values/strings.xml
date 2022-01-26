@@ -19,16 +19,11 @@
     <!-- DO NOT TRANSLATE Empty summary for dynamic preferences -->
     <string name="summary_empty" translatable="false"></string>
 
-    <!-- Label for feature switch [CHAR LIMIT=30] -->
-    <string name="switch_bar_on">On</string>
-
-    <!-- Label for feature switch [CHAR LIMIT=30] -->
-    <string name="switch_bar_off">Off</string>
-
     <!-- Device specific settings -->
     <string name="device_settings_app_name">Advanced settings</string>
 
     <!-- Ambient Display -->
+    <string name="ambient_enable">Use ambient display</string>
     <string name="ambient_display_title">Ambient display</string>
     <string name="ambient_display_enable_title">Ambient display</string>
     <string name="ambient_display_enable_summary">Wake screen when you receive notifications</string>
@@ -39,9 +34,6 @@
     <string name="ambient_display_summary_off">Screen will not wake when you receive notifications</string>
     <string name="ambient_display_always_on_title">Always on</string>
     <string name="ambient_display_always_on_summary">Show time, notification icons, and other info. Increased battery usage.</string>
-
-    <!-- Tilt sensor -->
-    <string name="tilt_sensor_title">Tilt sensor</string>
 
     <!-- Pickup sensor -->
     <string name="pickup_sensor_title">Pickup sensor</string>
@@ -68,6 +60,10 @@
     <string name="proximity_wake_enable_title">Proximity wake</string>
     <string name="proximity_wake_enable_summary">Wake device on hand wave</string>
 
+    <!-- Wake on gesture -->
+    <string name="wake_on_gesture_title">Wake up on gestures</string>
+    <string name="wake_on_gesture_summary">Wake the device instead of pulsing notifications on gesture events</string>
+
     <!-- Dialog texts -->
     <string name="dialog_ok">OK</string>
 
@@ -75,4 +71,3 @@
     <string name="doze_settings_help_title">Help</string>
     <string name="doze_settings_help_text">These features use sensor events to launch a doze notification pulse. The chosen sensor is only enabled when the device receives a notification, this helps to reduce battery usage. There is also an option to enable the chosen sensor as soon as the screen turns off, this will cause higher battery usage.</string>
 </resources>
-
