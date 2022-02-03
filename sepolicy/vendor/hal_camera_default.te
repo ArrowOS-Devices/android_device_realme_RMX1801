@@ -31,6 +31,7 @@ allow hal_camera_default system_file:file r_file_perms;
 
 get_prop(hal_camera_default, camera_prop)
 set_prop(hal_camera_default, camera_prop)
+get_prop(hal_camera_default, vendor_system_prop)
 
 dontaudit hal_camera_default self:tcp_socket { create };
 dontaudit hal_camera_default vendor_shell_exec:file { execute_no_trans };
