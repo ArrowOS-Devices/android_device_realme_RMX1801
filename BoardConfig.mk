@@ -188,7 +188,7 @@ PRODUCT_VENDOR_MOVE_ENABLED := true
 include device/qcom/sepolicy-legacy-um/SEPolicy.mk
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
-SELINUX_IGNORE_NEVERALLOWS := true
+# SELINUX_IGNORE_NEVERALLOWS := true
 
 # Vendor init
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_sdm660
