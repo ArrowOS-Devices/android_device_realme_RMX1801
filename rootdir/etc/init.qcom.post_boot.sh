@@ -331,62 +331,6 @@ function 8937_sched_dcvs_hmp()
 }
 target=`getprop ro.board.platform`
 
-function configure_zram_parameters() {
-    MemTotalStr=`cat /proc/meminfo | grep MemTotal`
-    MemTotal=${MemTotalStr:16:8}
-
-    low_ram=`getprop ro.config.low_ram`
-
-    # Zram disk - 75% for Go devices.
-    # For 512MB Go device, size = 384MB, set same for Non-Go.
-    # For 1GB Go device, size = 768MB, set same for Non-Go.
-    # For >1GB and <=3GB Non-Go device, size = 1GB
-    # For >3GB and <=4GB Non-Go device, size = 2GB
-    # For >4GB Non-Go device, size = 4GB
-    # And enable lz4 zram compression for Go targets.
-
-    if [ "$low_ram" == "true" ]; then
-        echo lz4 > /sys/block/zram0/comp_algorithm
-    fi
-
-    if [ -f /sys/block/zram0/disksize ]; then
-        if [ -f /sys/block/zram0/use_dedup ]; then
-            echo 1 > /sys/block/zram0/use_dedup
-        fi
-        if [ $MemTotal -le 524288 ]; then
-            echo lz4 > /sys/block/zram0/comp_algorithm
-            echo 402653184 > /sys/block/zram0/disksize
-            echo 160 > /proc/sys/vm/swappiness
-            echo 60 > /proc/sys/vm/direct_swappiness
-        elif [ $MemTotal -le 1048576 ]; then
-            echo lz4 > /sys/block/zram0/comp_algorithm
-            echo 805306368 > /sys/block/zram0/disksize
-            echo 160 > /proc/sys/vm/swappiness
-            echo 60 > /proc/sys/vm/direct_swappiness
-        elif [ $MemTotal -le 3145728 ]; then
-            echo lz4 > /sys/block/zram0/comp_algorithm
-            echo 1879048192 > /sys/block/zram0/disksize
-            echo 160 > /proc/sys/vm/swappiness
-            echo 60 > /proc/sys/vm/direct_swappiness
-        elif [ $MemTotal -le 4194304 ]; then
-            #config 2GB zram size with memory 4 GB
-            echo lz4 > /sys/block/zram0/comp_algorithm
-            echo 2147483648 > /sys/block/zram0/disksize
-            echo 160 > /proc/sys/vm/swappiness
-            echo 60 > /proc/sys/vm/direct_swappiness
-        else
-            #config 2GB+192M zram size with memory 6 GB
-            echo lz4 > /sys/block/zram0/comp_algorithm
-            echo 2348810240 > /sys/block/zram0/disksize
-            echo 160 > /proc/sys/vm/swappiness
-            echo 60 > /proc/sys/vm/direct_swappiness
-        fi
-        mkswap /dev/block/zram0
-        swapon /dev/block/zram0 -p 32758
-    fi
-
-}
-
 function configure_read_ahead_kb_values() {
 
     # Set 128 for all targets
@@ -454,7 +398,6 @@ low_ram=`getprop ro.config.low_ram`
 
 if [ "$ProductName" == "msmnile" ] || [ "$ProductName" == "kona" ] ; then
       # Enable ZRAM
-      configure_zram_parameters
       configure_read_ahead_kb_values
       echo 0 > /proc/sys/vm/page-cluster
       echo 100 > /proc/sys/vm/swappiness
@@ -556,8 +499,6 @@ else
     # Disable wsf for all targets beacause we are using efk.
     # wsf Range : 1..1000 So set to bare minimum value 1.
     echo 1 > /proc/sys/vm/watermark_scale_factor
-
-    configure_zram_parameters
 
     configure_read_ahead_kb_values
 
