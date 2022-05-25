@@ -12,8 +12,6 @@ persist.vendor.audio.ras.enabled=false
 persist.vendor.bt.aac_frm_ctl.enabled=true
 ro.vendor.audio.sdk.fluencetype=none
 ro.vendor.audio.sdk.ssr=false
-vendor.audio.dolby.ds2.enabled=false
-vendor.audio.dolby.ds2.hardbypass=false
 vendor.audio.feature.a2dp_offload.enable=false
 vendor.audio.flac.sw.decoder.24bit=true
 vendor.audio.hw.aac.encoder=true
@@ -100,7 +98,7 @@ debug.sdm.support_writeback=0
 debug.cpurend.vsync=false
 
 # Media
-debug.stagefright.omx_default_rank.sw-audio=1
+debug.stagefright.omx_default_rank.sw-audio=16
 debug.stagefright.omx_default_rank=0
 
 # OEM Unlock reporting
