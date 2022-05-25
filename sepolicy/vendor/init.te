@@ -2,3 +2,8 @@ allow init oppo_reserve_file:dir mounton;
 allow init sysfs_leds:file setattr;
 allow init sysfs_mmc:file setattr;
 allow init system_data_file:dir add_name;
+
+# Dolby
+allow init vendor_data_file:file lock;
+allow init hal_audio_default:binder call;
+allow init platform_app:binder call;

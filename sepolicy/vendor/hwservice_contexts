@@ -9,3 +9,6 @@ vendor.oppo.hardware.ktv::IKtv                                               u:o
 vendor.oppo.hardware.mmdisplayfeature::IMMDisplayFeature                     u:object_r:hal_omdisplay_hwservice:s0
 vendor.oppo.hardware.radio.opporadio::IOppoRadio                             u:object_r:hal_telephony_hwservice:s0
 vendor.oppo.hardware.radio.oppoappradio::IOppoAppRadio                       u:object_r:hal_telephony_hwservice:s0
+
+# Dolby
+vendor.dolby.hardware.dms::IDms                                              u:object_r:hal_dms_hwservice:s0
