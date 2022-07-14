@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2020 The Android Open Source Project
+ * Copyright (C) 2018 The Android Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,14 +16,13 @@
 
 #pragma once
 
-#include <atomic>
+#include <condition_variable>
 #include <memory>
+#include <mutex>
+#include <string>
 #include <thread>
 
-#include <aidl/android/hardware/power/BnPower.h>
 #include <perfmgr/HintManager.h>
-
-#include "disp-power/InteractionHandler.h"
 
 namespace aidl {
 namespace google {
@@ -32,23 +31,41 @@ namespace power {
 namespace impl {
 namespace pixel {
 
-using ::InteractionHandler;
-using ::aidl::android::hardware::power::Boost;
-using ::aidl::android::hardware::power::Mode;
 using ::android::perfmgr::HintManager;
 
-class Power : public ::aidl::android::hardware::power::BnPower {
+enum InteractionState {
+    INTERACTION_STATE_UNINITIALIZED,
+    INTERACTION_STATE_IDLE,
+    INTERACTION_STATE_INTERACTION,
+    INTERACTION_STATE_WAITING,
+};
+
+class InteractionHandler {
   public:
-    Power(std::shared_ptr<HintManager> hm);
-    ndk::ScopedAStatus setMode(Mode type, bool enabled) override;
-    ndk::ScopedAStatus isModeSupported(Mode type, bool *_aidl_return) override;
-    ndk::ScopedAStatus setBoost(Boost type, int32_t durationMs) override;
-    ndk::ScopedAStatus isBoostSupported(Boost type, bool *_aidl_return) override;
+    InteractionHandler(std::shared_ptr<HintManager> const &hint_manager);
+    ~InteractionHandler();
+    bool Init();
+    void Exit();
+    void Acquire(int32_t duration);
 
   private:
+    void Release();
+    void WaitForIdle(int32_t wait_ms, int32_t timeout_ms);
+    void AbortWaitLocked();
+    void Routine();
+
+    void PerfLock();
+    void PerfRel();
+
+    enum InteractionState mState;
+    int mIdleFd;
+    int mEventFd;
+    int32_t mDurationMs;
+    struct timespec mLastTimespec;
+    std::unique_ptr<std::thread> mThread;
+    std::mutex mLock;
+    std::condition_variable mCond;
     std::shared_ptr<HintManager> mHintManager;
-    std::unique_ptr<InteractionHandler> mInteractionHandler;
-    std::atomic<bool> mSustainedPerfModeOn;
 };
 
 }  // namespace pixel
