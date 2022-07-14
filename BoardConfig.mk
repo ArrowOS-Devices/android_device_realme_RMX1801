@@ -108,6 +108,9 @@ endif
 TARGET_SCREEN_DENSITY := 420
 TARGET_HAS_WIDE_COLOR_DISPLAY := true
 
+# DTW
+TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/double_tap_enable"
+
 # DRM
 TARGET_ENABLE_MEDIADRM_64 := true
 
