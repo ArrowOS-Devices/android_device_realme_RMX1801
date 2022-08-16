@@ -31,6 +31,11 @@ on early-init
     # Disable EAS
     write /proc/sys/kernel/sched_energy_aware 0
 
+    # Logger
+    start boot_log
+    start boot_log_crash
+    start boot_log_kernel
+
 on init
     write /dev/stune/foreground/schedtune.prefer_idle 1
     write /dev/stune/top-app/schedtune.boost 10
@@ -57,6 +62,11 @@ on init
     chmod 0664 /sys/class/devfreq/soc:qcom,cpubw/min_freq
     chmod 0664 /sys/class/devfreq/soc:qcom,cpubw/bw_hwmon/hyst_trigger_count
     chmod 0664 /sys/class/devfreq/soc:qcom,cpubw/bw_hwmon/hist_memory
+
+    # Logger
+    start boot_log 
+    start boot_log_crash
+    start boot_log_kernel
 
 on fs
     wait /dev/block/platform/soc/${ro.boot.bootdevice}
@@ -126,6 +136,11 @@ on boot
     setprop sys.usb.configfs 1
 
     chmod 0664 /proc/touchpanel/double_tap_enable
+
+    # Logger
+    start boot_log 
+    start boot_log_crash
+    start boot_log_kernel
 
 #Peripheral manager
 service vendor.per_mgr /vendor/bin/pm-service
@@ -221,6 +236,39 @@ service vendor.hvdcp_opti /vendor/bin/hvdcp_opti
     class main
     user root
     group system wakelock
+
+# Logger
+service boot_log /system/bin/logcat -b all -D -f /cache/boot_log_full.txt
+    class main
+    user root
+    group root system
+    disabled
+    oneshot
+
+service boot_log_crash /system/bin/logcat -b crash -D -f /cache/boot_log_crash.txt
+    class main
+    user root
+    group root system
+    disabled
+    oneshot
+
+service boot_log_kernel /system/bin/logcat -b kernel -D -f /cache/boot_log_kernel.txt
+    class main
+    user root
+    group root system
+    disabled
+    oneshot
+
+on early-boot
+    start boot_log
+    start boot_log_crash
+    start boot_log_kernel
+
+on property:sys.boot_completed=1
+# Stop the logger service
+    stop boot_log
+    stop boot_log_crash
+    stop boot_log_kernel
 
 on property:sys.boot_completed=1
     # Enable EAS
