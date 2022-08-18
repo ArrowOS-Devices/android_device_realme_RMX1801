@@ -14,6 +14,7 @@ persist.bt.a2dp.aac_disable=true
 ro.bluetooth.emb_wp_mode=false
 ro.bluetooth.wipower=false
 vendor.bluetooth.soc=cherokee
+bluetooth.device.class_of_device=90,2,12
 
 # Camera
 persist.camera.aifb=1
