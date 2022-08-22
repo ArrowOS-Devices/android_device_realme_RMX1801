@@ -88,7 +88,6 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.effect@5.0-impl \
     android.hardware.audio.effect@7.0-impl:32 \
     android.hardware.soundtrigger@2.1-impl \
-    audio.a2dp.default \
     audio.r_submix.default \
     audio.usb.default \
     libaudiopreprocessing \
