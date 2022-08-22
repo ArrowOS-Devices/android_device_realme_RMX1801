@@ -2643,6 +2643,11 @@ vendor/lib64/libdpmqmihal.so
 system_ext/lib64/libdpmframework.so|67ebd736333ae7158632735e3db06a4f9664f6a6
 
 # DRM
+vendor/lib/libspl.so
+vendor/lib64/libspl.so
+vendor/lib64/libops.so
+
+# DRM
 vendor/bin/qseecomd
 vendor/lib/libQSEEComAPI.so
 vendor/lib/libsdedrm.so
