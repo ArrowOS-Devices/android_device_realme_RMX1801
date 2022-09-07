@@ -39,10 +39,10 @@
         <library name="offload_bundle" path="libqcompostprocbundle.so"/>
         <library name="volume_listener" path="libvolumelistener.so"/>
         <library name="audiosphere" path="libasphere.so"/>
-	<library name="dirac" path="libdirac.so"/>
         <!-- #ifdef VENDOR_EDIT-->
         <!-- Kaiqin.Huang@RM.MM.AudioDriver.effect 2020/03/17 add for direc -->
         <library name="dirac_gef" path="libdiraceffect.so"/>
+	<library name="dirac" path="libdirac.so"/>
         <!-- #endif VENDOR_EDIT-->
     </libraries>
     <effects>
