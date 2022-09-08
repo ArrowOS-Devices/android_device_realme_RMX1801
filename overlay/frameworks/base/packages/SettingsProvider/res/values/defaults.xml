@@ -23,9 +23,6 @@
     <!-- Default screen brightness, from 0 to 255. 82 is 32%. -->
     <integer name="def_screen_brightness">255</integer>
 
-    <!-- 30 seconds for default screen timeout -->
-    <integer name="def_screen_off_timeout">300000</integer>
-
     <!-- Set Window animation scale to 50% by default -->
     <fraction name="def_window_animation_scale">50%</fraction>
 
