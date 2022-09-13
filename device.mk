@@ -224,6 +224,8 @@ PRODUCT_PACKAGES += \
 $(call inherit-product-if-exists, packages/apps/RealmeDirac/dirac.mk)
 
 # Doze
+PRODUCT_PACKAGES += \
+    RealmeParts
 
 # DRM
 PRODUCT_PACKAGES += \
